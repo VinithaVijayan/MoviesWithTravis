@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="i0t-C1-sTy" customClass="MovieTableViewCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i0t-C1-sTy" id="c8L-i1-P2g">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="BKS-9A-DzU" customClass="CustomImageView" customModule="Movies" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="94" height="149.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="DRF-LL-4bU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93S-jb-8xZ">
+                        <rect key="frame" x="114" y="19" width="290" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-2Q-hO1">
+                        <rect key="frame" x="114" y="54.5" width="290" height="81.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BKS-9A-DzU" firstAttribute="leading" secondItem="c8L-i1-P2g" secondAttribute="leading" constant="10" id="KjH-H6-JS7"/>
+                    <constraint firstItem="BKS-9A-DzU" firstAttribute="top" secondItem="c8L-i1-P2g" secondAttribute="top" id="ONy-pK-zOw"/>
+                    <constraint firstAttribute="trailing" secondItem="RLI-2Q-hO1" secondAttribute="trailing" constant="10" id="PCX-H5-wEI"/>
+                    <constraint firstAttribute="bottom" secondItem="BKS-9A-DzU" secondAttribute="bottom" id="Ryl-ew-bwn"/>
+                    <constraint firstItem="RLI-2Q-hO1" firstAttribute="top" secondItem="93S-jb-8xZ" secondAttribute="bottom" constant="15" id="XD4-rk-pZq"/>
+                    <constraint firstAttribute="bottom" secondItem="RLI-2Q-hO1" secondAttribute="bottom" constant="13.5" id="gjn-SK-3EL"/>
+                    <constraint firstItem="93S-jb-8xZ" firstAttribute="leading" secondItem="BKS-9A-DzU" secondAttribute="trailing" constant="10" id="lYz-3v-rHq"/>
+                    <constraint firstItem="RLI-2Q-hO1" firstAttribute="leading" secondItem="BKS-9A-DzU" secondAttribute="trailing" constant="10" id="mv2-Dh-NBw"/>
+                    <constraint firstItem="93S-jb-8xZ" firstAttribute="top" secondItem="c8L-i1-P2g" secondAttribute="top" constant="19" id="s3R-gj-cFP"/>
+                    <constraint firstAttribute="trailing" secondItem="93S-jb-8xZ" secondAttribute="trailing" constant="10" id="vsg-wb-l4C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movieTitleLabel" destination="93S-jb-8xZ" id="elE-Xn-otk"/>
+                <outlet property="overviewLabel" destination="RLI-2Q-hO1" id="aB4-0D-vaq"/>
+                <outlet property="posterImageView" destination="BKS-9A-DzU" id="pBC-ST-jAw"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="-10.044642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="225" height="224"/>
+    </resources>
+</document>
