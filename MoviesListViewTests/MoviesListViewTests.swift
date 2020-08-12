@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Movies
+@testable import MoviesWithTravis
 
 class MoviesListViewTests: XCTestCase {
     var movieListVC: MovieListViewController!
